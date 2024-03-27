@@ -21,5 +21,6 @@ int def(int n){
 int main(){
     int n;
     cin >> n;
-    cout << def(n);
+    if(n==0) cout << 0;
+    else cout << def(n);
 }
