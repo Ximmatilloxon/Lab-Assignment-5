@@ -1,3 +1,4 @@
+#include <cstdint>
 #include "iostream"
 #include "cmath"
 using namespace std;
@@ -14,13 +15,13 @@ using namespace std;
 //    return result;
 //}
 
-int def(int n){
+int64_t def(int64_t n){
     if(n == 1) return 3;
     return pow(def(n-1), 2) + 3;
 }
 
 int main(){
-    int n;
+    int64_t n;
     cin >> n;
     cout << def(n);
 }
