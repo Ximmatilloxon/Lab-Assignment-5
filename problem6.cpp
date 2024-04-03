@@ -2,7 +2,7 @@
 using namespace std;
 
 bool def(const string& s, int l, int r){
-    if(l == r) return true;
+    if(l > r) return true;
     else if(s[l] != s[r]) return false;
     return def(s, l + 1, r - 1);
 }
